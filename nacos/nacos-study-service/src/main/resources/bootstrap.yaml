@@ -1,0 +1,10 @@
+server:
+  port: 7010
+spring:
+  application:
+    name: study-service
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: localhost:8848

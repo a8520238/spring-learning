@@ -1,0 +1,19 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        prefix: custom-prefix # 不好用
+  profiles:
+    active: dev
+member:
+  name: lgz
+  age: 24
